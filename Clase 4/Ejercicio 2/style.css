@@ -1,0 +1,72 @@
+/* Fuente general Arial */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0; /* color de fondo suave */
+    color: #333; /* color de texto general */
+  }
+  
+/* Centrar contenido */
+    contenedor {
+    width: 60%;
+    margin: 0 auto;
+    text-align: justify;
+    font-family: Arial, sans-serif;
+  }
+
+
+  /* Encabezados (h1, h2, etc.) */
+  h1 {
+    color: #2c3e50; /* azul oscuro aproximado */
+    font-weight: bold;
+    text-decoration: underline; /* subrayado */
+  }
+
+  h3{
+    font-weight: bold;
+    text-decoration: underline;
+  }
+  
+  /* Párrafos */
+  p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #444;
+  }
+
+  i {
+    font-style: italic;
+  }
+
+  /* Resaltado con fondo */
+  resaltadoGris {
+    font-family: Arial, sans-serif;
+    background-color:#747474 ; 
+    color:#000 ;
+  }
+
+  resaltadoVerde {
+    background-color: #03c40d; /* verde */
+    color: #000000;
+  }
+
+   parrafoNaranja {
+    color: #be5906; /* naranja */
+    font-weight: bold;
+  }
+
+  parrafoAmarillo {
+    background-color: #ffef08; /* amarrillo */
+    font-style: italic;
+  }
+
+  parrafoRojo{
+    color: red;
+  }
+
+  parrafoCeleste {
+    background-color:#08ffff; /* celeste */
+  }
+
+  parrafoTachado{
+    text-decoration: line-through;
+  }
