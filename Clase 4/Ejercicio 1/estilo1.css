@@ -1,0 +1,9 @@
+#menu {
+    float: right;
+    width: 150px;
+}
+
+#contenido {
+    float: left;
+    width: 550px;
+}
