@@ -1,0 +1,134 @@
+/* Fondo con degradado azul oscuro a azul claro */
+body {
+    background: linear-gradient(to bottom, #000a1f, #001f3f, #003366, #004c8c, #006bb6, #0084d1);
+    color: white; /* Mantiene el contraste */
+    padding-top: 56px; /* Compensa la barra de navegación */
+    min-height: 100vh; /* Asegura que el fondo cubra la pantalla completa */
+}
+
+/* Ajusta las secciones para que sigan el degradado */
+section {
+    background: transparent;
+    padding: 60px 0;
+}
+
+/* Cambia el fondo de la barra de navegación para que coincida con la transición */
+.navbar {
+    background: linear-gradient(to right, #001f3f, #003366);
+}
+
+/* Estilos para la barra de navegación */
+.navbar .nav-link {
+    color: white !important; /* Fuerza el color blanco */
+}
+
+.navbar .navbar-brand {
+    color: white !important;
+}
+
+/* Ajusta el pie de página */
+footer {
+    background: linear-gradient(to bottom, #006bb6, #0084d1);
+}
+
+img {
+    border-radius: 10px; /* Bordes ligeramente redondeados, ajusta según prefieras */
+    width: 200px; /* Ajusta el ancho si es necesario */
+    height: auto; /* Mantiene proporciones */
+}
+
+/* Colores personalizados */
+.bg-purple {
+    background-color: #6f42c1;
+}
+
+.text-purple {
+    color: #6f42c1;
+}
+
+/* Estilos para la sección de inicio */
+#inicio {
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+}
+
+/* Aplica el degradado a la sección de habilidades y contacto */
+#habilidades, #contacto {
+    background: linear-gradient(to bottom, #001f3f, #003366, #004c8c, #006bb6, #0084d1);
+    color: white; /* Ajusta el color del texto */
+    padding: 60px 0;
+}
+
+/* Aplicar el degradado a todas las secciones */
+#habilidades, #contacto, #proyectos, footer {
+    background: linear-gradient(to bottom, #001f3f, #003366, #004c8c, #006bb6, #0084d1);
+    color: white; /* Ajusta la visibilidad del texto */
+    padding: 60px 0;
+}
+
+/* Ajuste para evitar sobreescritura del fondo */
+#habilidades .card, #contacto .container, #proyectos .card {
+    background: transparent;
+}
+
+/* Ajustar el color de los títulos para mejor contraste */
+#habilidades h2, #contacto h2, #proyectos h2, footer p {
+    color: white !important;
+}
+
+/* Ajustar el color del texto dentro de la sección de proyectos */
+#proyectos {
+    color: white !important;
+}
+
+/* Ajuste para los títulos y descripciones dentro de las tarjetas */
+#proyectos .card-title,
+#proyectos .card-text,
+#proyectos h2 {
+    color: white !important;
+}
+
+/* Ajuste para los botones dentro de las tarjetas */
+#proyectos .btn-outline-primary {
+    color: white;
+    border-color: white;
+}
+
+#proyectos .btn-outline-primary:hover {
+    background-color: white;
+    color: #004c8c; /* Ajusta el color al tono del fondo */
+}
+
+
+/* Animación para las tarjetas de habilidades */
+.card {
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+/* Estilos para dispositivos móviles */
+@media (max-width: 768px) {
+    #inicio {
+        min-height: auto;
+        padding-top: 2rem;
+    }
+}
+
+/* Ajustes del carrusel */
+#carouselProyectos .carousel-item img {
+    max-height: 400px; /* Ajusta la altura máxima */
+    width: auto; /* Mantiene proporción natural */
+    object-fit: contain; /* Ajusta la imagen dentro del contenedor sin recortarla */
+    border-radius: 10px; /* Bordes redondeados */
+}
+
+/* Ajuste de los textos dentro del carrusel */
+.carousel-caption {
+    background: rgba(0, 0, 0, 0.7); /* Mejora contraste del fondo */
+    padding: 15px;
+    border-radius: 8px;
+}
