@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Desafío de Especificidad CSS</title>
+
+  <style>
+
+    /* Estilo base para todos los elementos */
+
+    * {
+
+      font-family: 'Arial', sans-serif;
+
+      margin: 0;
+
+      padding: 0;
+
+    }
+
+
+
+    /* Estilo específico por etiqueta */
+
+    h1 {
+
+      color: blue;
+
+    }
+
+
+
+    p {
+
+      color: green;
+
+    }
+
+
+
+    button {
+
+      background-color: yellow;
+
+      color: black;
+
+    }
+
+
+
+    /* Estilo por clase */
+
+    .texto-destacado {
+
+      color: red;
+
+      font-weight: bold;
+
+    }
+
+
+
+    /* Estilo por ID */
+
+    #boton-principal {
+
+      background-color: orange;
+
+      padding: 10px 20px;
+
+    }
+
+
+
+    /* Estilo por atributo */
+
+    [type="button"] {
+
+      border: none;
+
+      cursor: pointer;
+
+    }
+
+
+
+    /* Estilo por clase */
+
+    div .texto-destacado {
+
+      color: purple;
+
+    }
+
+
+
+    /* Estilo por selector de hijo directo */
+
+    div>p {
+
+      font-size: 18px;
+
+    }
+
+  </style>
+
+</head>
+
+
+
+<body>
+
+
+
+  <div>
+
+    <h1 class="texto-destacado">Encabezado Principal</h1>
+
+    <p>Este es un párrafo normal.</p>
+
+    <p class="texto-destacado">Este es un párrafo destacado.</p>
+
+    <button type="button" id="boton-principal">Haz clic aquí</button>
+
+  </div>
+
+
+
+</body>
+
+
+
+</html>
