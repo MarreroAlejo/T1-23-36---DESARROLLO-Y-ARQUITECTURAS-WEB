@@ -1,0 +1,13 @@
+main {
+  flex: 1;
+  display: flex;
+  gap: 2rem;
+  padding: 1rem;
+}
+
+article {
+  width: 75%;
+  padding: 1rem;
+}
+
+  
